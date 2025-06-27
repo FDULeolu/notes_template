@@ -1,0 +1,151 @@
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{bm}
+\usepackage{amssymb}
+% \usepackage{graphicx} 
+\usepackage{nccmath}
+% \usepackage{subfigure}
+\usepackage{thmtools}
+\usepackage{thm-restate}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{color}
+% \usepackage{cite}
+% \usepackage{natbib}
+\usepackage{tikz}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{cancel}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{subcaption}
+
+\usepackage{tcolorbox}
+\tcbuselibrary{most}
+
+\numberwithin{equation}{section}
+
+%%%%%%%%%%%%%%%%%% Note %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newcommand{\jiaye}[1]{{\textcolor{red}{#1}}}
+% \newcommand{\yizhou}[1]{{\textcolor{blue}{#1}}}
+% \newcommand{\complete}[1]{{\textcolor{green}{#1}}}
+% \newcommand{\zhiheng}[1]{{\textcolor{brown}{#1}}}
+% \newcommand{\chuan}[1]{{\textcolor{pink}{#1}}}
+% \newcommand{\jiayi}[1]{{\textcolor{orange}{#1}}}
+
+
+
+\newcommand{\DO}{{\operatorname{do}}}
+\newcommand{\X}{{X}}
+\newcommand{\Y}{{Y}}
+\newcommand{\U}{{U}}
+\newcommand{\COPCAD}{{COPCAD}}
+\newcommand{\tr}{{\text{tr}}}
+\newcommand{\ca}{{\text{ca}}}
+\newcommand{\di}{{\text{di}}}
+\newcommand{\lo}{{\text{lo}}}
+\newcommand{\hi}{{\text{hi}}}
+
+%%%%%%%%%%%%%%%%%% Theorem %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \newtheorem{definition}{Definition}
+% \newtheorem{assumption}{Assumption}
+\newtheorem{condition}{Condition}
+% \newtheorem{proof}{Proof}
+% \newtheorem{lemma}{Lemma}
+% \newtheorem{corollary}{Corollary}
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{proposition}{Proposition}
+% \declaretheorem[name=Theorem]{thm}
+% \declaretheorem[name=Lemma]{lem}
+% \declaretheorem[name=Proposition]{prop}
+% \declaretheorem[name=Corollary]{cor}
+% \declaretheorem[name=Definition]{def}
+% \declaretheorem[name=Proposition,numberwithin=section]{prop}
+
+% #### 将 config.tex 中的定理环境的对应部分替换为如下内容
+% 定义单独编号，其他四个共用一个编号计数 这里只列举了五种，其他可类似定义（未定义的使用原来的也可）
+% \newtcbtheorem[number within=section]{defn}%
+% {定义}{colback=OliveGreen!10,colframe=Green!70,fonttitle=\bfseries}{def}
+
+% \newtcbtheorem[number within=section]{lemma}%
+% {引理}{colback=Salmon!20,colframe=Salmon!90!Black,fonttitle=\bfseries}{lem}
+
+% % 使用另一个计数器 use counter from=lemma
+% \newtcbtheorem[use counter from=lemma, number within=section]{them}%
+% {定理}{colback=SeaGreen!10!CornflowerBlue!10,colframe=RoyalPurple!55!Aquamarine!100!,fonttitle=\bfseries}{them}
+
+% \newtcbtheorem[use counter from=lemma, number within=section]{criterion}%
+% {准则}{colback=green!5,colframe=green!35!black,fonttitle=\bfseries}{cri}
+
+% \newtcbtheorem[use counter from=lemma, number within=section]{corollary}%
+% {推论}{colback=Emerald!10,colframe=cyan!40!black,fonttitle=\bfseries}{cor}
+% colback=red!5,colframe=red!75!black
+
+% 这个颜色我不喜欢
+%\newtcbtheorem[number within=section]{proposition}%
+%{命题}{colback=red!5,colframe=red!75!black,fonttitle=\bfseries}{cor}
+
+% .... 命题 例 注 证明 解 使用之前的就可以（全文都是这种框框就很丑了），也可以按照上述定义 ...
+
+
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+%%%%%%%%%%%%%%%%%% characters %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+\newcommand{\cD}{\mathcal{D}}
+\newcommand{\cE}{\mathcal{E}}
+\newcommand{\cF}{\mathcal{F}}
+\newcommand{\cG}{\mathcal{G}}
+\newcommand{\cH}{\mathcal{H}}
+\newcommand{\cI}{\mathcal{I}}
+\newcommand{\cJ}{\mathcal{J}}
+\newcommand{\cK}{\mathcal{K}}
+\newcommand{\cL}{\mathcal{L}}
+\newcommand{\cM}{\mathcal{M}}
+\newcommand{\cN}{\mathcal{N}}
+\newcommand{\cO}{\mathcal{O}}
+\newcommand{\cP}{\mathcal{P}}
+\newcommand{\cQ}{\mathcal{Q}}
+\newcommand{\cR}{\mathcal{R}}
+\newcommand{\cS}{\mathcal{S}}
+\newcommand{\cT}{\mathcal{T}}
+\newcommand{\cU}{\mathcal{U}}
+\newcommand{\cV}{\mathcal{V}}
+\newcommand{\cW}{\mathcal{W}}
+\newcommand{\cX}{\mathcal{X}}
+\newcommand{\cY}{\mathcal{Y}}
+\newcommand{\cZ}{\mathcal{Z}}
+
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bB}{\mathbb{B}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bH}{\mathbb{H}}
+\newcommand{\bI}{\mathbb{I}}
+\newcommand{\bJ}{\mathbb{J}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bL}{\mathbb{L}}
+\newcommand{\bM}{\mathbb{M}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bO}{\mathbb{O}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bQ}{\mathbb{Q}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bS}{\mathbb{S}}
+\newcommand{\bT}{\mathbb{T}}
+\newcommand{\bU}{\mathbb{U}}
+\newcommand{\bV}{\mathbb{V}}
+\newcommand{\bW}{\mathbb{W}}
+\newcommand{\bX}{\mathbb{X}}
+\newcommand{\bY}{\mathbb{Y}}
+\newcommand{\bZ}{\mathbb{Z}}
