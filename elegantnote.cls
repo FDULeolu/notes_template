@@ -599,21 +599,28 @@
 
 % --- 定义五种定理盒子风格 ---
 % 定义：单独编号
+\ifdefstring{\ELEGANT@lang}{cn}{
 \newtcbtheorem[number within=section]{defn}%
-{定义}{colback=OliveGreen!10, colframe=Green!70, fonttitle=\bfseries}{def}
+    {定义}{colback=OliveGreen!10, colframe=Green!70, fonttitle=\bfseries}{defn}
 
-% 引理：编号与定理共用
-\newtcbtheorem[number within=section]{lem}%
-{引理}{colback=Salmon!20, colframe=Salmon!90!Black, fonttitle=\bfseries}{lem}
+    \newtcbtheorem[number within=section]{lem}%
+    {引理}{colback=Salmon!20, colframe=Salmon!90!Black, fonttitle=\bfseries}{lem}
 
-% 定理：与引理共用编号
-\newtcbtheorem[use counter from=lem, number within=section]{them}%
-{定理}{colback=SeaGreen!10!CornflowerBlue!10, colframe=RoyalPurple!55!Aquamarine!100!, fonttitle=\bfseries}{them}
+    \newtcbtheorem[use counter from=lem, number within=section]{them}%
+    {定理}{colback=SeaGreen!10!CornflowerBlue!10, colframe=RoyalPurple!55!Aquamarine!100!, fonttitle=\bfseries}{them}
+    
+    \newtcbtheorem[use counter from=lem, number within=section]{cor}%
+    {推论}{colback=Emerald!10, colframe=cyan!40!black, fonttitle=\bfseries}{cor}
+}{
+  \newtcbtheorem[number within=section]{defn}%
+  {Definition}{colback=OliveGreen!10, colframe=Green!70, fonttitle=\bfseries}{defn}
 
-% % 准则：与引理共用编号
-% \newtcbtheorem[use counter from=lem, number within=section]{criterion}%
-% {准则}{colback=green!5, colframe=green!35!black, fonttitle=\bfseries}{cri}
+  \newtcbtheorem[number within=section]{lem}%
+  {Lemma}{colback=Salmon!20, colframe=Salmon!90!Black, fonttitle=\bfseries}{lem}
 
-% 推论：与引理共用编号
-\newtcbtheorem[use counter from=lem, number within=section]{cor}%
-{推论}{colback=Emerald!10, colframe=cyan!40!black, fonttitle=\bfseries}{cor}
+  \newtcbtheorem[use counter from=lem, number within=section]{them}%
+  {Theorem}{colback=SeaGreen!10!CornflowerBlue!10, colframe=RoyalPurple!55!Aquamarine!100!, fonttitle=\bfseries}{them}
+
+  \newtcbtheorem[use counter from=lem, number within=section]{cor}%
+  {Corollary}{colback=Emerald!10, colframe=cyan!40!black, fonttitle=\bfseries}{cor}
+}
