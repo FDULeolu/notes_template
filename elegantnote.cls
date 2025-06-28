@@ -214,7 +214,11 @@
   \renewcommand*{\proofname}{%
     \normalfont\bfseries\color{ecolor} Proof}
   \newcommand\versiontext{Version: }%
-  \newcommand\updatetext{Update: }}{\relax}
+  \newcommand\updatetext{Update: }
+  \AtBeginDocument{
+    \setlength{\parindent}{0pt}
+  }
+}{\relax}
 
 \RequirePackage{indentfirst}
 \RequirePackage{anyfontsize}
